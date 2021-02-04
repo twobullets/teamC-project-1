@@ -1,0 +1,56 @@
+@charset "EUC-KR";
+			*{
+				text-align: center;
+				
+			}
+			
+			section{
+				height : 90vh;
+				overflow:auto;
+			}
+			footer {           
+				height : 5vh;
+				border-top:1px solid gray;
+			}
+			footer > div {           
+				padding:25px;
+				font-size:small;
+			}
+			.login{
+				position:absolute;
+				top:10px;
+				right:10px;
+			}
+			.login a{
+				padding:10px;
+			}
+			input{
+				margin:10px;
+				height:30px;
+				width: 300px;
+				cursor:pointer;
+				text-align:left;
+			}
+			button{
+				background-color:teal;
+				height:40px;
+				width: 310px;
+				border: none;
+				color:white;
+				font-size:18px;
+				font-weight: bold;
+				cursor:pointer;
+			}
+			button:hover
+			{
+				background-color: #B90000;
+			}
+			a
+			{
+				color:black;
+				text-decoration:none;
+			}
+			img
+			{
+				cursor: pointer;
+			}

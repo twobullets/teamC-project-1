@@ -1,0 +1,36 @@
+@charset "EUC-KR";
+
+body
+{
+	background-image: url(../images/backimg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#logo
+{
+	position:absolute;
+	top :20px;
+	left:50px;
+}
+#lojo
+{
+	position:absolute;
+	top:20px;
+	right:50px;
+}
+#lojo a
+{
+	text-decoration: none;
+	font-size:20px;
+	font-weight: bold;
+	color:white;
+	padding-left: 20px
+}
+#lojo a:hover
+{
+	color:#B90000;
+}
+img
+{
+	cursor: pointer;
+}

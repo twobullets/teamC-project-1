@@ -1,0 +1,132 @@
+select * from Customer
+where 
+userName in ( '조관우','은지원','이승기');
+
+
+select * from Customer
+where 
+userName = '조관우';  
+
+select * from Customer
+where 
+userName like '%호%'
+or userName like '%용%';
+
+select * from Customer order by userBirth;
+where
+userBirth < 1970
+and userName like '조%';
+
+select count(*) from Customer
+where userName = '은지원';
+
+select sum(userBirth) from Customer;
+
+select avg(userBirth) from Customer;
+
+select 2020-avg(userBirth) from Customer;
+
+select 
+(userBirth + 1) as 탄생일 ,concat(userName,':',userAddr) as 성명
+from Customer;
+
+select
+userBirth
+from Customer
+group by userBirth order by userBirth;
+
+
+select 컬럼리스트
+from 테이블
+where 조건
+[group by 컬럼리스트]
+[order by 컬럼리스트]
+[limit 건수]
+
+
+
+
+alter table Customer add gender varchar(10) default 'M';
+
+alter table Customer modify gender varchar(2);
+
+alter table Customer change gender Gend varchar(2);
+
+alter table Customer drop Gend;
+
+
+
+
+select
+count(*)
+from
+Customer;
+
+
+
+select
+sum(userBirth)
+from
+Customer;
+
+select
+2020-avg(userBirth)
+from
+Customer;
+
+select
+*
+from
+Customer
+where userName like '%김%호%'
+
+select
+*
+from
+Customer
+where userName = '김경호'
+
+
+" 같은 의미
+select avg(userBirth)
+from Customer
+where userName = '김경호'
+or name = '이승기';
+
+select avg(userBirth)
+from Customer
+where userName in ('김경호','이승기');
+"
+
+
+select *
+from Customer
+where birth >= 1970;
+
+
+select *
+from Customer
+order by userName asc;
+
+
+select *
+from Customer
+order by userBirth,userName asc;
+
+
+
+select userBirth,count(userBirth)
+from Customer
+group by userBirth
+order by userBirth;
+
+
+alter table Customer add Gender varchar(10) default 'F';
+
+
+desc Customer; >> 컬럼이 잘 들어갔는지 확인 문구
+
+alter table Customer modify Gender varchar(2);
+
+
+alter table Customer change Gender Gend varchar(2);
